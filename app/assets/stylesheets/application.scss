@@ -16,17 +16,69 @@
 
  @import "bootstrap";
 
- .navbar-brand .title {
-     color: white;
- }
+ body {
+    font-family: 'Poppins', sans-serif;
+  }
 
- .image {
-     border-radius: 50%;
-     img {
-         border-radius: 50%;
+  .logo {
+    margin-bottom: 25px;
+    font-size: 40px;
+  }
+
+  .sidebar-nav {
+    width: 80%;
+
+    &__list {
+        list-style: none;
+        &:not(:first-child) {
+            margin-bottom: 10px;
+        }
+
+        &-content{
+            display: inline-block !important;
+            border-radius: 50px;
+            padding: 5px 15px;
+            transition: all .4s ease-in-out;
+            &:hover {
+                background-color: rgb(214, 236, 247);
+            }
+        }
+
+        .tweeet{
+            display: inline-block !important;
+           
+            @media only screen and (min-width: 768px) {
+                display: none !important;
+            }
+        }
+
+        .btn-tweeet {
+            background-color: #1da1f2;
+            border-radius: 50px;
+            transition: all .3s;
+
+            &:hover {
+                background-color: #1b95e0;
+            }
+        }
+        
+    }
+
+     &__icon {
+        width: 28px;
+        height: 28px;
+        margin-right: 8px;
+        fill: #1da1f2;
      }
- }
 
- .notification:not(:last-child) {
-     margin-bottom: 0;
- }
+     &__links:not(:first-child) {
+         font-size: 20px;
+         display: none !important;
+         text-decoration: none;
+         color: black;
+
+         @media only screen and (min-width: 768px) {
+             display: inline-block !important;
+         }
+     }
+  }
