@@ -50,7 +50,7 @@
         2.5k
       </a>
 
-      <a href="#" class="twit-content-icons__links" data-toggle="tooltip" data-placement="top" title="Delete Tweeet">
+      <%= link_to tweeet, method: :delete, data: { confirm: "Are you sure you want to delete this tweet?"} do %>
         <svg viewBox="0 0 24 24" class="twit-content-icons__svg">
           <g>
             <path
@@ -61,7 +61,7 @@
             ></path>
           </g>
         </svg>
-      </a>
+      <% end %>
     </div>
   </div>
 </div>
