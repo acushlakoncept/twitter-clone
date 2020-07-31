@@ -4,6 +4,7 @@
 // that code so it'll be compiled.
 
 import 'bootstrap'
+global.toastr = require("toastr")
 
 require("@rails/ujs").start()
 require("turbolinks").start()
