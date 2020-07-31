@@ -1,20 +1,21 @@
 <div class="container-fluid">
   <div class="row mt-2">
-    <div class="col-md-3">
+    <div class="col-md-3 sticky-top">
       <div class="left-side">
-        <%= render 'shared/left_sidebar' %>
+        <%= render 'tweeets/shared/left_sidebar' %>
       </div>
     </div>
     <div class="col-md-6 border-right border-left">
-        <%= render 'shared/twit_section' %>
+
+       
+        <%= render 'tweeets/shared/twit_section' %>
          <div class="container mt-3">
-            <%= render 'shared/twits' %>
-            <%= render 'shared/twits' %>
+            <%= render 'tweeets/shared/twits' %>
          </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 sticky-top">
       <aside class="right_sidebar">
-        <%= render 'shared/right_sidebar' %>
+        <%= render 'tweeets/shared/right_sidebar' %>
       </aside>
 
     </div>

@@ -1,3 +1,4 @@
+<% @tweeets.each do |tweeet| %>
 <div class="row">
   <div class="col-sm-2">
     <img
@@ -12,8 +13,7 @@
       <span class="text-gray">@acushlakoncept . 3m</span>
     </p>
     <p class="twit-content">
-      Sometimes, what we just need is a push. Someone to tell us "Go ahead, you
-      can do it"
+      <%= tweeet.tweeet %><br>
     </p>
 
     <div class="twit-content-icons d-flex justify-content-between">
@@ -50,7 +50,7 @@
         2.5k
       </a>
 
-      <a href="#" class="twit-content-icons__links">
+      <a href="#" class="twit-content-icons__links" data-toggle="tooltip" data-placement="top" title="Delete Tweeet">
         <svg viewBox="0 0 24 24" class="twit-content-icons__svg">
           <g>
             <path
@@ -66,3 +66,4 @@
   </div>
 </div>
 <div class="spacer border-top mt-4 mb-4"></div>
+<% end %>

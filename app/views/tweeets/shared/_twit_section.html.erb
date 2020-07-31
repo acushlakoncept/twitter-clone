@@ -2,7 +2,12 @@
   <h3 class="primary__title border-bottom">Latest Tweeets</h3>
 
   <div class="twitform-box">
-    <form>
+
+   
+        
+           
+
+      <%= form_for @tweeet, :html => {:multipart => true} do |f| %>
       <div class="form-row align-items-center">
         <div class="input-group mb-2 d-flex align-items-center">
           <img
@@ -10,14 +15,7 @@
             src="https://bulma.io/images/placeholders/64x64.png"
             alt=""
           />
-          <input
-            type="text"
-            multiline
-            rows="30"
-            class="form-control twit-input"
-            id="inlineFormInputGroup"
-            placeholder="What's Happening?"
-          />
+          <%= f.text_field :tweeet, class: "form-control twit-input", placeholder: "What's Happening?" %>
         </div>
       </div>
 
@@ -102,10 +100,12 @@
               </a>
             </li>
           </ul>
-          <button type="submit" class="btn btn-tweeet">Tweeet</button>
+          <%# <button type="submit" class="btn btn-tweeet">Tweeet</button> %>
+           <%= f.submit "Submit", class: "btn btn-tweeet" %>
+        
         </div>
       </div>
-    </form>
+    <% end %>
   </div>
 
   <div class="spacer border-top mt-2"></div>
