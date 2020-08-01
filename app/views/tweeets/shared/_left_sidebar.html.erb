@@ -101,7 +101,8 @@
           ></path>
         </g>
       </svg></a>
-      <a class="sidebar-nav__links" href="#">Profile </a>
+      <%# <a class="sidebar-nav__links" href="#">Profile </a> %>
+      <%= link_to "Profile", edit_user_registration_path, class: "sidebar-nav__links" %>
     </div>
   </li>
   <li class="sidebar-nav__list d-flex">
