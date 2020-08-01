@@ -2,9 +2,9 @@
 <div class="row">
   <div class="col-sm-2">
 
-  <%= gravatar_image_tag(tweeet.user.email, size: 64, alt: tweeet.user.name, class: "rounded-circle") %>
+  <%= gravatar_image_tag(tweeet.user.email, size: 64, alt: tweeet.user.name, class: "rounded-circle mr-4") %>
   </div>
-  <div class="col-sm-10">
+  <div class="col-sm-9">
     <p class="twit-author">
       <strong><%= tweeet.user.name %></strong>
       <span class="text-gray">@<%= tweeet.user.username %> . <em><%= distance_of_time_in_words(tweeet.created_at, Time.now) %> ago</em></span>
