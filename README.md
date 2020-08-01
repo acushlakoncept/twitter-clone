@@ -6,6 +6,7 @@ I totally revamped the UI, modelling it to the current interface of Twitter inst
 
 I also implemented the Flash messages using Toastr instead of the built in flash.
 
+![screenshot](./twitter_clone.gif)
 
 ## Built With
 
