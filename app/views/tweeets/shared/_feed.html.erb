@@ -1,0 +1,37 @@
+<div class="column is-half"></div>
+
+
+    <article class="media box">
+		<figure class="media-left">
+			<p class="image is-64x64">
+				<img src="https://bulma.io/images/placeholders/64x64.png" alt="">
+			</p>
+		</figure>
+		<div class="media-content">
+			 
+		</div>
+	</article>
+
+
+<% @tweeets.each do |tweeet| %>
+    <div class="box">
+        <article class="media">
+            <div class="media-left">
+                <figure class="image is-64x64">
+                <img src="https://bulma.io/images/placeholders/64x64.png" alt="">
+                </figure>
+            </div>
+            <div class="media-content">
+                <div class="content">
+                    <strong>Uduak Essien</strong><br>
+                    <small>@acushlakoncept</small><br>
+                    <p><%= tweeet.tweeet %></p>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+<% end %>
+
+
+  		

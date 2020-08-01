@@ -1,0 +1,34 @@
+
+
+      <%= render "devise/shared/reg_ui" %>  
+
+
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+        <div class="form-group">
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Enter email" %>
+        </div>
+
+        <div class="form-group">
+        <%= f.password_field :password, autocomplete: "current-password", class: "form-control", placeholder: "Password" %>
+        </div>
+         
+          <% if devise_mapping.rememberable? %>
+          <div class="form-check mb-3">
+            <%= f.check_box :remember_me, class: "form-check-input" %>
+            <%= f.label :remember_me, class: "form-check-label" %>
+          </div>
+           <% end %>
+
+
+        <%= f.submit "Log in", class: "btn btn-primary" %>
+        <%= render "devise/shared/links" %>
+      <% end %>
+
+
+        </div>
+
+      </div>
+  </div>
+</div>
+

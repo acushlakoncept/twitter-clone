@@ -1,0 +1,41 @@
+.reg-session {
+  height: 100vh;
+
+  .twitter-bg {
+    background-color: #71c9f8;
+    position: relative;
+    overflow: hidden;
+
+    .twit-bg {
+      fill: #1b95e0;
+      position: absolute;
+      width: 200%;
+      left: -250px;
+      top: -120px;
+    }
+
+    .twitter-intro {
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 65%;
+
+      &__icon {
+        fill: #fff;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .signup-box {
+    padding: 15px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+}

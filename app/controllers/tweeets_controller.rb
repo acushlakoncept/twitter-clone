@@ -1,34 +1,35 @@
 class TweeetsController < ApplicationController
-  before_action :set_tweeet, only: [:show, :edit, :update, :destroy]
+  before_action :set_tweeet, only: %i[show edit update destroy]
+  # before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!
 
   # GET /tweeets
   # GET /tweeets.json
   def index
-    @tweeets = Tweeet.all
+    @tweeets = Tweeet.all.order('created_at DESC')
+    @tweeet = Tweeet.new
   end
 
   # GET /tweeets/1
   # GET /tweeets/1.json
-  def show
-  end
+  def show; end
 
   # GET /tweeets/new
   def new
-    @tweeet = Tweeet.new
+    @tweeet = current_user.tweeets.build
   end
 
   # GET /tweeets/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /tweeets
   # POST /tweeets.json
   def create
-    @tweeet = Tweeet.new(tweeet_params)
+    @tweeet = current_user.tweeets.build(tweeet_params)
 
     respond_to do |format|
       if @tweeet.save
-        format.html { redirect_to @tweeet, notice: 'Tweeet was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Tweeet was successfully created.' }
         format.json { render :show, status: :created, location: @tweeet }
       else
         format.html { render :new }
@@ -62,13 +63,14 @@ class TweeetsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_tweeet
-      @tweeet = Tweeet.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def tweeet_params
-      params.require(:tweeet).permit(:tweeet)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_tweeet
+    @tweeet = Tweeet.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def tweeet_params
+    params.require(:tweeet).permit(:tweeet)
+  end
 end
