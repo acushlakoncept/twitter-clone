@@ -1,1 +1,1 @@
-json.partial! "tweeets/shared/tweeet", tweeet: @tweeet
+json.partial! 'tweeets/shared/tweeet', tweeet: @tweeet

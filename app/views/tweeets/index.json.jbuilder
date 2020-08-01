@@ -1,1 +1,1 @@
-json.array! @tweeets, partial: "tweeets/shared/tweeet", as: :tweeet
+json.array! @tweeets, partial: 'tweeets/shared/tweeet', as: :tweeet
