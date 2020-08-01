@@ -6,6 +6,8 @@ I totally revamped the UI, modelling it to the current interface of Twitter inst
 
 I also implemented the Flash messages using Toastr instead of the built in flash.
 
+[Live Demo](https://twitarclone.herokuapp.com/)
+
 ![screenshot](./twitter_clone.gif)
 
 ## Built With
