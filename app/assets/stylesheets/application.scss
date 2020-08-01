@@ -31,6 +31,7 @@ body {
 
   &__list {
     list-style: none;
+
     &:not(:first-child) {
       margin-bottom: 10px;
     }
@@ -40,6 +41,7 @@ body {
       border-radius: 50px;
       padding: 5px 15px;
       transition: all 0.4s ease-in-out;
+
       &:hover {
         background-color: rgb(214, 236, 247);
       }
@@ -133,6 +135,7 @@ body {
 
 .twit-content-icons {
   width: 95%;
+  
   &__links {
     text-decoration: none !important;
     color: #bbb;
