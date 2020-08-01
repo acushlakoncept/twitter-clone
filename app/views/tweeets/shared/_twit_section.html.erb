@@ -10,9 +10,7 @@
       <%= form_for @tweeet, :html => {:multipart => true} do |f| %>
       <div class="form-row align-items-center">
         <div class="input-group mb-2 d-flex align-items-center">
-        <%= gravatar_image_tag('spam@spam.com'.gsub('spam', current_user.name), :alt => current_user.name, :class => "rounded-circle mr-2")  %>
-          <%#= image_tag avatar_url(current_user.email), class: "rounded-circle mr-2" %>
-          
+        <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.name, class: "rounded-circle mr-2") %>
           <%= f.text_field :tweeet, class: "form-control twit-input", placeholder: "What's Happening?" %>
         </div>
       </div>

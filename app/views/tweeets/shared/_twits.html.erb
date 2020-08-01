@@ -1,7 +1,8 @@
 <% @tweeets.each do |tweeet| %>
 <div class="row">
   <div class="col-sm-2">
-  <%= gravatar_image_tag('spam@spam.com'.gsub('spam', current_user.name), :alt => current_user.name, :class => "rounded-circle")  %>
+
+  <%= gravatar_image_tag(tweeet.user.email, size: 64, alt: tweeet.user.name, class: "rounded-circle") %>
   </div>
   <div class="col-sm-10">
     <p class="twit-author">
