@@ -11,7 +11,7 @@
       <div class="form-row align-items-center">
         <div class="input-group mb-2 d-flex align-items-center">
         <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.name, class: "rounded-circle mr-2") %>
-          <%= f.text_field :tweeet, class: "form-control twit-input", placeholder: "What's Happening?" %>
+          <%= f.text_field :tweeet, autofocus: true, class: "form-control twit-input", placeholder: "What's Happening?" %>
         </div>
       </div>
 

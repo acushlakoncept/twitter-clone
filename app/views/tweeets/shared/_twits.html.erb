@@ -22,7 +22,7 @@
             ></path>
           </g>
         </svg>
-        25
+        <%= rand(1..50) %>
       </a>
 
       <a href="#" class="twit-content-icons__links">
@@ -33,7 +33,7 @@
             ></path>
           </g>
         </svg>
-        304
+        <%= rand(1..1000) %>
       </a>
 
       <a href="#" class="twit-content-icons__links">
@@ -44,7 +44,8 @@
             ></path>
           </g>
         </svg>
-        2.5k
+        <% likes = rand(1..10000) %>
+        <%= "#{likes/1000}.#{(likes%1000).to_s.chars.first}k" if likes > 999 %>
       </a>
       <% if tweeet.user == current_user %>
       <%= link_to tweeet, method: :delete, data: { confirm: "Are you sure you want to delete this tweet?"}, title: "Delete Tweeet" do %>

@@ -20,7 +20,7 @@
           ></path>
         </g>
       </svg></a>
-      <a class="sidebar-nav__links" href="#">Home </a>
+      <%= link_to "Home", root_path, class: "sidebar-nav__links" %>
     </div>
   </li>
   <li class="sidebar-nav__list d-flex">
@@ -150,7 +150,7 @@
         ></path>
       </g>
     </svg>
-    <a href="#" class="btn btn-tweeet btn-block sidebar-nav__links">Tweeet</a>
+    <%= link_to "Tweeet", root_path, class: "btn btn-tweeet btn-block sidebar-nav__links" %>
   </li>
 </ul>
 
