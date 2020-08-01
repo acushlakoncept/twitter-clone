@@ -132,72 +132,69 @@ body {
 }
 
 .twit-content-icons {
-    width: 95%;
-    &__links {
-        text-decoration: none !important;
-        color: #bbb;
-    }
+  width: 95%;
+  &__links {
+    text-decoration: none !important;
+    color: #bbb;
+  }
 
-    &__svg {
-        width: 25px;
-        height: 25px;
-        fill: #ccc;
-        background-color: transparent;
-        border-radius: 50%;
-        padding: 2px;
+  &__svg {
+    width: 25px;
+    height: 25px;
+    fill: #ccc;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 2px;
 
-        &:first-child:hover {
-            background-color: #eee;
-            fill: #1da1f2;
-        }
+    &:first-child:hover {
+      background-color: #eee;
+      fill: #1da1f2;
     }
+  }
 }
 
-
-
 .right_sidebar {
-    width: 90%;
-    
-    .search-box {
-        position: relative;
+  width: 90%;
+
+  .search-box {
+    position: relative;
+  }
+
+  .search_twit {
+    border-radius: 40px;
+    padding: 5px 2px 5px 30px;
+    background-color: #e6ecf0;
+    outline: none;
+    border: none;
+  }
+
+  .submit_btn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 7px;
+  }
+
+  .search-icon {
+    width: 18px;
+    height: 18px;
+    fill: #bbb;
+  }
+
+  .trends {
+    background-color: #f5f8fa;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+
+    &__item {
+      line-height: 8px;
+      font-size: 15px;
+
+      &--title,
+      &--twits {
+        color: #9197a3;
+      }
     }
-
-    .search_twit {
-        border-radius: 40px;
-        padding: 5px 2px 5px 30px;
-        background-color: #e6ecf0;
-        outline: none;
-        border: none;
-    }
-
-    .submit_btn {
-        background: transparent;
-        border: none;
-        position: absolute;
-        top: 7px;
-    }
-
-    .search-icon {
-        width: 18px;
-        height: 18px;
-        fill: #bbb;
-    }
-
-    .trends {
-        background-color: #f5f8fa;
-        border-radius: 8px;
-        overflow: hidden;
-        padding: 10px;
-
-        &__item {
-            line-height: 8px;
-            font-size: 15px;
-
-            &--title,
-            &--twits {
-                color: #9197a3;
-            }
-        }
-    }
-   
+  }
 }
