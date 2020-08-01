@@ -1,24 +1,9 @@
-# README
+# Twitter App Clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this project I followed along [Andy Leverenz’s brilliant Building a Twitter Clone screen casts](https://youtu.be/5gUysPm64a4) to build a light weight version of Twitter in other to get lot of healthy experience using Devise in the process.
 
-Things you may want to cover:
+I totally revamped the UI, modelling it to the current interface of Twitter instead of the 2017 version he was using in the video. I used bootstrap while he used Bulma, since I was alot familiar with bootstrap.
 
-* Ruby version
+I also implemented the Flash messages using Toastr instead of the built in flash.
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
