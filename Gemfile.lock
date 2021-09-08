@@ -61,7 +61,7 @@ GEM
     autoprefixer-rails (9.8.5)
       execjs
     bcrypt (3.1.15)
-    better_errors (2.7.1)
+    better_errors (2.8.0)
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
@@ -95,7 +95,7 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    erubi (1.9.0)
+    erubi (1.10.0)
     eventmachine (1.2.7)
     execjs (2.7.0)
     ffi (1.13.1)
@@ -257,7 +257,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  better_errors (~> 2.7, >= 2.7.1)
+  better_errors (~> 2.8)
   bootsnap (>= 1.4.2)
   bootstrap (~> 4.5)
   byebug
